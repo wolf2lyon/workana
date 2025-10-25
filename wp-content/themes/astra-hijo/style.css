@@ -1,0 +1,552 @@
+/*
+Theme Name:   Astra Hijo
+Description:  Tema hijo para tutorial DonWeb
+Author:       Emanuel
+Author URL:   https://test123prueba.online/
+Template:     astra 
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  astra-hijo
+*/
+
+/* Añade aquí tus estilos personalizados */
+
+.title-color span {
+    color: rgb(186, 227, 62);
+}
+
+.title-color {
+    font-weight: 400;
+}
+
+.img-header img {
+    display: block;
+    margin: 0 auto;
+}
+
+.figure-1-hero {
+    position: absolute !important;
+    top: -550px !important;
+    left: +100px !important;
+    width: 122px !important;
+}
+
+.figure-2-hero {
+    position: absolute !important;
+    top: -200px !important;
+    left: -354px !important;
+    width: 364px !important;
+}
+
+
+.figure-1-hero img {
+    width: 100% !important;
+}
+
+.figure-2-hero img {
+    width: 100% !important;
+}
+
+.image-grid img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.image-section-8 {
+    position: absolute !important;
+    top: -191px !important;
+    left: 160px !important;
+    width: 168px !important;
+}
+
+.image-section-8 figure {
+    width: 168px !important;
+}
+
+.divider-section {
+    border-top: 1px solid #adb6d3 !important;
+    /* 👈 línea superior */
+    border-bottom: 1px solid #adb6d3 !important;
+}
+
+
+.image-section-6 {
+    width: auto !important;
+}
+
+.description-section-6 {
+    width: auto !important;
+}
+
+
+.image-bonus {
+    line-height: 0 !important;
+}
+
+.paragraph-bonus {
+    width: auto !important;
+}
+
+
+.section-3-absolute {
+    position: absolute !important;
+    top: -300px !important;
+    left: -425px !important;
+}
+
+
+.section-3-absolute-2 {
+    position: absolute !important;
+    top: -300px !important;
+    right: -425px !important;
+}
+
+.circle-section-4 {
+    position: absolute !important;
+    top: 185px !important;
+    left: 62px !important;
+}
+
+.lined-dolar {
+    position: absolute !important;
+    top: 102px !important;
+    right: 201px !important;
+}
+
+.lined-dolar-section-4 {
+    position: absolute !important;
+    top: -82px !important;
+    right: -6px !important;
+}
+
+
+
+@media (max-width: 1100px) {
+    .image-section-8 {
+        /* top: -191px !important;
+    left: 160px !important; */
+        width: 120px !important;
+    }
+}
+
+
+@media (max-width: 975px) {
+    .image-section-8 {
+        left: 112px !important;
+    }
+}
+
+
+
+@media (max-width: 875px) {
+    .image-section-8 {
+        left: 90px !important;
+        top: -138px !important;
+    }
+}
+
+
+
+@media (min-width: 977px) {
+    #paragraph-section-mobile {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 977px) {
+    #paragraph-section-desktop {
+        display: none !important;
+    }
+
+    .figure-1-hero {
+        top: -460px !important;
+    }
+
+    .figure-2-hero {
+        width: 220px !important;
+        left: -290px !important;
+    }
+
+    .circle-section-4 img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .circle-section-4 {
+        top: 300px !important;
+    }
+
+    .img-2-section-4 {
+        width: 180px !important;
+    }
+
+    .title-color {
+        font-size: 35px !important;
+    }
+
+    .header-section {
+        font-size: 25px !important;
+    }
+
+    .header-section-2 {
+        font-size: 25px !important;
+    }
+
+    .header-section-3 {
+        font-size: 25px !important;
+    }
+
+    .header-section-5 {
+        font-size: 25px !important;
+    }
+
+    .header-section-7 {
+        font-size: 25px !important;
+    }
+
+    .header-section-8 {
+        font-size: 25px !important;
+    }
+
+    .header-section-9 {
+        font-size: 25px !important;
+    }
+
+    .lined-dolar {
+        width: 120px !important;
+        top: -155px !important;
+        right: -25px !important;
+    }
+
+    .lined-dolar-section-4 {
+        width: 120px !important;
+        top: -78px !important;
+        right: -32px !important;
+    }
+}
+
+.paragraph-auto {
+    width: auto !important;
+}
+
+
+/*mobile contructor*/
+
+.collage-container {
+    width: fit-content;
+    /* Se ajusta al contenido */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tamaños individuales para replicar la composición */
+.img {
+    display: block;
+    object-fit: cover;
+}
+
+/* Imagen pequeña arriba izquierda */
+.img-1 {
+    width: 69px;
+    height: 79px;
+}
+
+/* Imagen grande centro arriba */
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 3;
+    grid-row: span 2;
+    height: 100%;
+}
+
+/* Imagen grande abajo centro */
+.img-4 {
+    grid-column: 2;
+    width: 102x;
+    height: 116px;
+}
+
+/* Imagen pequeña abajo derecha */
+.img-3 {
+    width: 60px;
+    height: 69px;
+}
+
+.img-2 {
+    width: 107px;
+    height: 123px;
+}
+
+.gallery-section {
+    display: none !important;
+}
+
+
+
+/* mobile constructor 2 */
+
+
+
+.collage-container-2 {
+    width: fit-content;
+    /* Se ajusta al contenido */
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    align-items: center;
+    gap: 10px;
+}
+
+
+.prueba {
+    width: 30px;
+}
+
+.prueba-1 {
+    grid-column: span 3;
+    grid-row: span 4;
+    width: 100%;
+    height: 100%;
+}
+
+.prueba-1 img {
+    width: 112px;
+    height: 129px;
+}
+
+.prueba-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+}
+
+.prueba-2 img {
+    width: 72px;
+    height: 81px;
+}
+
+.prueba-3 {
+    grid-column: 3 /span 2;
+    grid-row: 5 /span 2;
+    width: 100%;
+    height: 100%;
+}
+
+.prueba-3 img {
+    width: 67px;
+    height: 77px;
+}
+
+.prueba-4 {
+    grid-column: 5 /span 3;
+    grid-row: 4 /span 4;
+    width: 100%;
+    height: 100%;
+}
+
+.prueba-4 img {
+    width: 115px;
+    height: 132px;
+}
+
+.paragraph-footer-mobile {
+    display: none !important;
+}
+
+.paragraph-section-6 {
+    font-size: 18px !important;
+}
+
+.title-section-6 {
+    font-size: 24px !important;
+}
+
+@media (max-width: 767px) {
+    .img-header img {
+        width: 300px !important;
+    }
+
+    .button-contact {
+        width: 100% !important;
+    }
+
+    .container-image-section-4 {
+        min-height: auto !important;
+    }
+
+    .header-section {
+        font-size: 20px !important;
+    }
+
+    .header-section-2 {
+        font-size: 20px !important;
+    }
+
+    .header-section-3 {
+        font-size: 17px !important;
+    }
+
+    .header-section-5 {
+        font-size: 20px !important;
+    }
+
+    .header-section-7 {
+        font-size: 20px !important;
+    }
+
+    .header-section-8 {
+        font-size: 20px !important;
+    }
+
+    .header-section-9 {
+        font-size: 18px !important;
+    }
+
+    .paragrapah-ask {
+        font-size: 18px !important;
+    }
+
+    .paragrapah-ask-2 {
+        font-size: 13px !important;
+    }
+
+    .gallery-section {
+        display: block !important;
+    }
+
+    .gallery-section-desktop {
+        display: none !important;
+    }
+
+    .section-3-absolute {
+        max-width: 320px !important;
+        width: 320px !important;
+        top: -412px !important;
+        left: -112px !important;
+    }
+
+    .section-3-absolute img {
+        display: block;
+    }
+
+    .section-3-absolute-2 {
+        max-width: 320px !important;
+        width: 320px !important;
+        top: -96px !important;
+        right: -120px !important;
+    }
+
+    .circle-section-4 {
+        top: -33px !important;
+        left: 24px !important;
+    }
+
+    .card-circle {
+        width: 290px !important;
+        max-width: 290px !important;
+    }
+
+    .image-section-8 {
+        width: 80px !important;
+        height: 80px !important;
+        left: 143px !important;
+        top: -92px !important;
+    }
+
+    .figure-1-hero {
+        width: 88px !important;
+        height: 88px !important;
+        top: -316px !important;
+        left: 111px !important;
+    }
+
+    .figure-2-hero {
+        width: 130px !important;
+        height: 64px !important;
+        top: -85px !important;
+        left: -108px !important;
+    }
+
+    .paragraph-footer {
+        display: none !important;
+    }
+
+    .paragraph-footer-mobile {
+        display: block !important;
+    }
+
+    .logo-footer {
+        width: auto !important;
+    }
+
+    .paragraph-title-hero {
+        font-size: 20px !important;
+    }
+
+    .paragraph-title-dolar-1 {
+        font-size: 14px !important;
+    }
+
+    .paragraph-title-dolar-2 {
+        font-size: 26px !important;
+        font-weight: 800 !important;
+    }
+
+    .paragraph-why {
+        font-size: 14px !important;
+    }
+
+    .title-section-6 {
+        font-size: 18px !important;
+    }
+
+    .paragraph-section-6 {
+        font-size: 14px !important;
+    }
+
+    .lined-dolar {
+        width: 120px !important;
+        top: -138px !important;
+        right: -25px !important;
+    }
+
+    .lined-dolar-section-4 {
+        width: 120px !important;
+        top: -78px !important;
+        right: -70px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .img-2-section-4 {
+        width: 130px !important;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .img-2-section-4 {
+        width: 116px !important;
+    }
+
+    .circle-section-4 figure,
+    .circle-section-4 figure img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .circle-section-4 {
+        top: -26px !important;
+        left: 7px !important;
+    }
+}
