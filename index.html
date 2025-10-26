@@ -22,7 +22,7 @@
 		!function (s, n) { var o, i, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === a[t] }) } function u(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)if (0 !== n.data[a]) return !1; return !0 } function f(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\udedf") }return !1 } function g(e, t, n, a) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"), o = r.getContext("2d", { willReadFrequently: !0 }), i = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(function (e) { i[e] = t(o, e, n, a) }), i } function t(e) { var t = s.createElement("script"); t.src = e, t.defer = !0, s.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { s.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }), r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = function (e) { c(n = e.data), r.terminate(), t(n) }) } catch (e) { } c(n = g(i, f, p, u)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
 	</script>
 	<link rel="stylesheet" id="astra-theme-css-css"
-		href="./wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.11.13" media="all">
+		href="wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.11.13" media="all">
 	<style id="astra-theme-css-inline-css">
 		:root {
 			--ast-post-nav-space: 0;
@@ -2919,14 +2919,14 @@
 		}
 	</style>
 	<link rel="stylesheet" id="uagb-block-positioning-css-css"
-		href="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/spectra-block-positioning.min.css?ver=2.19.15"
+		href="wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/spectra-block-positioning.min.css?ver=2.19.15"
 		media="all">
 	<link rel="stylesheet" id="uag-style-5-css"
-		href="/wp-content/uploads/uag-plugin/assets/0/uag-css-5.css?ver=1761431100" media="all">
-	<link rel="stylesheet" id="parent-style-css" href="/wp-content/themes/astra/style.css?ver=6.8.3" media="all">
-	<link rel="stylesheet" id="child-style-css" href="/wp-content/themes/astra-hijo/style.css?ver=1.0" media="all">
+		href="wp-content/uploads/uag-plugin/assets/0/uag-css-5.css?ver=1761431100" media="all">
+	<link rel="stylesheet" id="parent-style-css" href="wp-content/themes/astra/style.css?ver=6.8.3" media="all">
+	<link rel="stylesheet" id="child-style-css" href="wp-content/themes/astra-hijo/style.css?ver=1.0" media="all">
 	<!--[if IE]>
-<script src="/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.11.13" id="astra-flexibility-js"></script>
+<script src="wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.11.13" id="astra-flexibility-js"></script>
 <script id="astra-flexibility-js-after">
 flexibility(document.documentElement);
 </script>
@@ -3007,9 +3007,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-4d4c9cda">
 											<figure class="wp-block-image size-full is-resized"><img decoding="async"
 													width="346" height="58"
-													src="/wp-content/uploads/2025/10/workana_logo.png" alt=""
+													src="wp-content/uploads/2025/10/workana_logo.png" alt=""
 													class="wp-image-16" style="object-fit:cover;width:173px;height:auto"
-													srcset="/wp-content/uploads/2025/10/workana_logo.png 346w, /wp-content/uploads/2025/10/workana_logo-300x50.png 300w"
+													srcset="wp-content/uploads/2025/10/workana_logo.png 346w, wp-content/uploads/2025/10/workana_logo-300x50.png 300w"
 													sizes="(max-width: 346px) 100vw, 346px"></figure>
 										</div>
 									</div>
@@ -3082,7 +3082,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container lined-dolar uagb-block-6216eff7">
 													<figure class="wp-block-image size-full is-resized"><img
 															decoding="async" width="172" height="48"
-															src="/wp-content/uploads/2025/10/precio-hero.png" alt=""
+															src="wp-content/uploads/2025/10/precio-hero.png" alt=""
 															class="wp-image-490" style="width:86px"></figure>
 												</div>
 											</div>
@@ -3093,9 +3093,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-43196e24">
 											<figure class="wp-block-image aligncenter size-full img-header"><img
 													fetchpriority="high" decoding="async" width="511" height="511"
-													src="/wp-content/uploads/2025/10/Imagen-1.jpg" alt=""
+													src="wp-content/uploads/2025/10/Imagen-1.jpg" alt=""
 													class="wp-image-27"
-													srcset="/wp-content/uploads/2025/10/Imagen-1.jpg 511w, /wp-content/uploads/2025/10/Imagen-1-300x300.jpg 300w, /wp-content/uploads/2025/10/Imagen-1-150x150.jpg 150w"
+													srcset="wp-content/uploads/2025/10/Imagen-1.jpg 511w, wp-content/uploads/2025/10/Imagen-1-300x300.jpg 300w, wp-content/uploads/2025/10/Imagen-1-150x150.jpg 150w"
 													sizes="(max-width: 511px) 100vw, 511px"></figure>
 
 
@@ -3103,16 +3103,16 @@ flexibility(document.documentElement);
 											<div class="wp-block-uagb-container uagb-block-71c83e7e">
 												<figure class="wp-block-image size-full is-resized figure-2-hero"><img
 														loading="lazy" decoding="async" width="334" height="165"
-														src="/wp-content/uploads/2025/10/figura-1-hero.png" alt=""
+														src="wp-content/uploads/2025/10/figura-1-hero.png" alt=""
 														class="wp-image-97" style="width:40px;height:auto"
-														srcset="/wp-content/uploads/2025/10/figura-1-hero.png 334w, /wp-content/uploads/2025/10/figura-1-hero-300x148.png 300w"
+														srcset="wp-content/uploads/2025/10/figura-1-hero.png 334w, wp-content/uploads/2025/10/figura-1-hero-300x148.png 300w"
 														sizes="auto, (max-width: 334px) 100vw, 334px"></figure>
 
 
 
 												<figure class="wp-block-image size-full is-resized figure-1-hero"><img
 														loading="lazy" decoding="async" width="122" height="122"
-														src="/wp-content/uploads/2025/10/figura-2-hero.png" alt=""
+														src="wp-content/uploads/2025/10/figura-2-hero.png" alt=""
 														class="wp-image-96" style="width:20px;height:auto"></figure>
 											</div>
 										</div>
@@ -3162,7 +3162,7 @@ flexibility(document.documentElement);
 											<div class="wp-block-uagb-container uagb-block-db56c808">
 												<figure class="wp-block-image size-full is-resized lined-dolar"><img
 														decoding="async" width="172" height="48"
-														src="/wp-content/uploads/2025/10/precio-hero.png" alt=""
+														src="wp-content/uploads/2025/10/precio-hero.png" alt=""
 														class="wp-image-490" style="width:86px"></figure>
 											</div>
 										</div>
@@ -3202,9 +3202,9 @@ flexibility(document.documentElement);
 											<div class="wp-block-uagb-container uagb-block-bb0c4384">
 												<figure class="wp-block-image size-full is-resized image-grid"><img
 														loading="lazy" decoding="async" width="488" height="494"
-														src="/wp-content/uploads/2025/10/imagen-1-section-2-1.png"
+														src="wp-content/uploads/2025/10/imagen-1-section-2-1.png"
 														alt="" class="wp-image-128" style="width:244px;height:auto"
-														srcset="/wp-content/uploads/2025/10/imagen-1-section-2-1.png 488w, /wp-content/uploads/2025/10/imagen-1-section-2-1-296x300.png 296w"
+														srcset="wp-content/uploads/2025/10/imagen-1-section-2-1.png 488w, wp-content/uploads/2025/10/imagen-1-section-2-1-296x300.png 296w"
 														sizes="auto, (max-width: 488px) 100vw, 488px"></figure>
 
 
@@ -3219,9 +3219,9 @@ flexibility(document.documentElement);
 												<figure class="wp-block-image size-full is-resized image-grid"
 													style="margin-bottom:80px"><img loading="lazy" decoding="async"
 														width="328" height="129"
-														src="/wp-content/uploads/2025/10/imagen-3-section-2-1.png"
+														src="wp-content/uploads/2025/10/imagen-3-section-2-1.png"
 														alt="" class="wp-image-132" style="width:328px"
-														srcset="/wp-content/uploads/2025/10/imagen-3-section-2-1.png 328w, /wp-content/uploads/2025/10/imagen-3-section-2-1-300x118.png 300w"
+														srcset="wp-content/uploads/2025/10/imagen-3-section-2-1.png 328w, wp-content/uploads/2025/10/imagen-3-section-2-1-300x118.png 300w"
 														sizes="auto, (max-width: 328px) 100vw, 328px"></figure>
 
 
@@ -3265,7 +3265,7 @@ flexibility(document.documentElement);
 													class="wp-block-uagb-container section-3-absolute uagb-layout-grid uagb-block-0c3f5624">
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-7-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-7-section-3.jpg"
 															alt="" class="wp-image-408" style="object-fit:cover">
 													</figure>
 
@@ -3273,7 +3273,7 @@ flexibility(document.documentElement);
 
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-1-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-1-section-3.jpg"
 															alt="" class="wp-image-404" style="object-fit:cover">
 													</figure>
 
@@ -3289,7 +3289,7 @@ flexibility(document.documentElement);
 
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-2-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-2-section-3.jpg"
 															alt="" class="wp-image-405" style="object-fit:cover">
 													</figure>
 
@@ -3297,7 +3297,7 @@ flexibility(document.documentElement);
 
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-3-section-3-1.jpg"
+															src="wp-content/uploads/2025/10/Imagen-3-section-3-1.jpg"
 															alt="" class="wp-image-414" style="object-fit:cover">
 													</figure>
 												</div>
@@ -3312,28 +3312,28 @@ flexibility(document.documentElement);
 
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-6-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-6-section-3.jpg"
 															alt="" class="wp-image-416"></figure>
 
 
 
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-8-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-8-section-3.jpg"
 															alt="" class="wp-image-417"></figure>
 
 
 
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-4-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-4-section-3.jpg"
 															alt="" class="wp-image-418"></figure>
 
 
 
 													<figure class="wp-block-image size-full image-section-3"><img
 															loading="lazy" decoding="async" width="243" height="278"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-3.jpg"
 															alt="" class="wp-image-419"></figure>
 												</div>
 											</div>
@@ -3346,19 +3346,19 @@ flexibility(document.documentElement);
 													<div class="collage-container">
 														<div class="image-section-gallery-4">
 															<img decoding="async"
-																src="/wp-content/uploads/2025/10/Imagen-4-section-3.jpg"
+																src="wp-content/uploads/2025/10/Imagen-4-section-3.jpg"
 																class="img img-1" alt="">
 														</div>
 														<div class="container-2">
 															<img decoding="async"
-																src="/wp-content/uploads/2025/10/Imagen-7-section-3.jpg"
+																src="wp-content/uploads/2025/10/Imagen-7-section-3.jpg"
 																class="img img-2 image-section-gallery-4" alt="">
 															<img decoding="async"
-																src="/wp-content/uploads/2025/10/Imagen-3-section-3-1.jpg"
+																src="wp-content/uploads/2025/10/Imagen-3-section-3-1.jpg"
 																class="img img-3 image-section-gallery-4" alt="">
 														</div>
 														<img decoding="async"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-3.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-3.jpg"
 															class="img img-4 image-section-gallery-4" alt="">
 													</div>
 												</div>
@@ -3370,22 +3370,22 @@ flexibility(document.documentElement);
 													<div class="collage-container-2">
 														<div class="prueba prueba-1 image-section-gallery-4">
 															<img decoding="async"
-																src="/wp-content/uploads/2025/10/Imagen-1-section-3.jpg"
+																src="wp-content/uploads/2025/10/Imagen-1-section-3.jpg"
 																alt="">
 														</div>
 														<div class="prueba prueba-2 image-section-gallery-4">
 															<img decoding="async"
-																src="/wp-content/uploads/2025/10/Imagen-6-section-3.jpg"
+																src="wp-content/uploads/2025/10/Imagen-6-section-3.jpg"
 																alt="">
 														</div>
 														<div class="prueba prueba-3  image-section-gallery-4">
 															<img decoding="async"
-																src="/wp-content/uploads/2025/10/Imagen-8-section-3.jpg"
+																src="wp-content/uploads/2025/10/Imagen-8-section-3.jpg"
 																alt="">
 														</div>
 														<div class="prueba prueba-4 image-section-gallery-4">
 															<img decoding="async"
-																src="/wp-content/uploads/2025/10/Imagen-2-section-3.jpg"
+																src="wp-content/uploads/2025/10/Imagen-2-section-3.jpg"
 																alt="">
 														</div>
 													</div>
@@ -3406,9 +3406,9 @@ flexibility(document.documentElement);
 												class="wp-block-uagb-container container-image-section-4 uagb-block-f5b1e571">
 												<figure class="wp-block-image size-full image-section-4"><img
 														loading="lazy" decoding="async" width="415" height="829"
-														src="/wp-content/uploads/2025/10/Imagen-1-section-4.jpg" alt=""
+														src="wp-content/uploads/2025/10/Imagen-1-section-4.jpg" alt=""
 														class="wp-image-291" style="object-fit:cover"
-														srcset="/wp-content/uploads/2025/10/Imagen-1-section-4.jpg 415w, /wp-content/uploads/2025/10/Imagen-1-section-4-150x300.jpg 150w"
+														srcset="wp-content/uploads/2025/10/Imagen-1-section-4.jpg 415w, wp-content/uploads/2025/10/Imagen-1-section-4-150x300.jpg 150w"
 														sizes="auto, (max-width: 415px) 100vw, 415px"></figure>
 											</div>
 
@@ -3418,9 +3418,9 @@ flexibility(document.documentElement);
 												class="wp-block-uagb-container container-image-section-4 uagb-block-573f41d9">
 												<figure class="wp-block-image size-full img-2-section-4"><img
 														loading="lazy" decoding="async" width="259" height="518"
-														src="/wp-content/uploads/2025/10/Imagen-2-section-4.jpg" alt=""
+														src="wp-content/uploads/2025/10/Imagen-2-section-4.jpg" alt=""
 														class="wp-image-292" style="object-fit:cover"
-														srcset="/wp-content/uploads/2025/10/Imagen-2-section-4.jpg 259w, /wp-content/uploads/2025/10/Imagen-2-section-4-150x300.jpg 150w"
+														srcset="wp-content/uploads/2025/10/Imagen-2-section-4.jpg 259w, wp-content/uploads/2025/10/Imagen-2-section-4-150x300.jpg 150w"
 														sizes="auto, (max-width: 259px) 100vw, 259px"></figure>
 
 
@@ -3429,7 +3429,7 @@ flexibility(document.documentElement);
 													class="wp-block-uagb-container circle-section-4 uagb-block-d0a0ce1e">
 													<figure class="wp-block-image size-full is-resized"><img
 															loading="lazy" decoding="async" width="122" height="122"
-															src="/wp-content/uploads/2025/10/figura-2-hero.png" alt=""
+															src="wp-content/uploads/2025/10/figura-2-hero.png" alt=""
 															class="wp-image-96"
 															style="object-fit:cover;width:185px;height:185px"></figure>
 												</div>
@@ -3585,7 +3585,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-6cda0ccb">
 													<figure class="wp-block-image size-full is-resized image-bonus"><img
 															loading="lazy" decoding="async" width="120" height="44"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
 															alt="" class="wp-image-329" style="width:62px"></figure>
 												</div>
 											</div>
@@ -3621,7 +3621,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-561e6b27">
 													<figure class="wp-block-image size-full is-resized image-bonus"><img
 															loading="lazy" decoding="async" width="120" height="44"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-4-1.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-4-1.jpg"
 															alt="" class="wp-image-336" style="width:62px"></figure>
 												</div>
 											</div>
@@ -3658,7 +3658,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-ef461621">
 													<figure class="wp-block-image size-full is-resized image-bonus"><img
 															loading="lazy" decoding="async" width="120" height="44"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
 															alt="" class="wp-image-329" style="width:62px"></figure>
 												</div>
 											</div>
@@ -3695,7 +3695,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-cc5e211f">
 													<figure class="wp-block-image size-full is-resized image-bonus"><img
 															loading="lazy" decoding="async" width="120" height="44"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
 															alt="" class="wp-image-329" style="width:62px" title="">
 													</figure>
 												</div>
@@ -3733,7 +3733,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-0b2025da">
 													<figure class="wp-block-image size-full image-bonus"><img
 															loading="lazy" decoding="async" width="120" height="44"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
 															alt="" class="wp-image-329"></figure>
 												</div>
 											</div>
@@ -3770,7 +3770,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-3c323da8">
 													<figure class="wp-block-image size-full is-resized image-bonus"><img
 															loading="lazy" decoding="async" width="120" height="44"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
 															alt="" class="wp-image-329" style="width:62px"></figure>
 												</div>
 											</div>
@@ -3807,7 +3807,7 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-728a3daa">
 													<figure class="wp-block-image size-full is-resized image-bonus"><img
 															loading="lazy" decoding="async" width="120" height="44"
-															src="/wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
+															src="wp-content/uploads/2025/10/Imagen-5-section-4.jpg"
 															alt="" class="wp-image-329" style="width:62px"></figure>
 												</div>
 											</div>
@@ -3831,7 +3831,7 @@ flexibility(document.documentElement);
 													<figure
 														class="wp-block-image size-full is-resized lined-dolar-section-4">
 														<img loading="lazy" decoding="async" width="172" height="48"
-															src="/wp-content/uploads/2025/10/precio-hero.png" alt=""
+															src="wp-content/uploads/2025/10/precio-hero.png" alt=""
 															class="wp-image-490" style="width:86px;height:auto">
 													</figure>
 												</div>
@@ -3958,9 +3958,9 @@ flexibility(document.documentElement);
 											<div
 												class="wp-block-uagb-image uagb-block-ffd3cf72 wp-block-uagb-image--layout-default wp-block-uagb-image--effect-static wp-block-uagb-image--align-none">
 												<figure class="wp-block-uagb-image__figure"><img decoding="async"
-														srcset="/wp-content/uploads/2025/10/Imagen-1-section-5.png ,/wp-content/uploads/2025/10/Imagen-1-section-5.png 780w, /wp-content/uploads/2025/10/Imagen-1-section-5.png 360w"
+														srcset="wp-content/uploads/2025/10/Imagen-1-section-5.png ,wp-content/uploads/2025/10/Imagen-1-section-5.png 780w, wp-content/uploads/2025/10/Imagen-1-section-5.png 360w"
 														sizes="auto, (max-width: 480px) 150px"
-														src="/wp-content/uploads/2025/10/Imagen-1-section-5.png" alt=""
+														src="wp-content/uploads/2025/10/Imagen-1-section-5.png" alt=""
 														class="uag-image-251" width="894" height="552"
 														title="Imagen-1-section-5" loading="lazy" role="img"></figure>
 											</div>
@@ -3983,9 +3983,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-0e0d45e3">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="888" height="550"
-													src="/wp-content/uploads/2025/10/Imagen-2-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-2-section-5.png" alt=""
 													class="wp-image-252"
-													srcset="/wp-content/uploads/2025/10/Imagen-2-section-5.png 888w, /wp-content/uploads/2025/10/Imagen-2-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-2-section-5-768x476.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-2-section-5.png 888w, wp-content/uploads/2025/10/Imagen-2-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-2-section-5-768x476.png 768w"
 													sizes="auto, (max-width: 888px) 100vw, 888px"></figure>
 
 
@@ -4006,9 +4006,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-13872e0a">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="888" height="550"
-													src="/wp-content/uploads/2025/10/Imagen-3-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-3-section-5.png" alt=""
 													class="wp-image-254"
-													srcset="/wp-content/uploads/2025/10/Imagen-3-section-5.png 888w, /wp-content/uploads/2025/10/Imagen-3-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-3-section-5-768x476.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-3-section-5.png 888w, wp-content/uploads/2025/10/Imagen-3-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-3-section-5-768x476.png 768w"
 													sizes="auto, (max-width: 888px) 100vw, 888px"></figure>
 
 
@@ -4029,9 +4029,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-b76e61c2">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="896" height="556"
-													src="/wp-content/uploads/2025/10/Imagen-4-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-4-section-5.png" alt=""
 													class="wp-image-255"
-													srcset="/wp-content/uploads/2025/10/Imagen-4-section-5.png 896w, /wp-content/uploads/2025/10/Imagen-4-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-4-section-5-768x477.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-4-section-5.png 896w, wp-content/uploads/2025/10/Imagen-4-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-4-section-5-768x477.png 768w"
 													sizes="auto, (max-width: 896px) 100vw, 896px"></figure>
 
 
@@ -4052,9 +4052,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-082aae7f">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="900" height="558"
-													src="/wp-content/uploads/2025/10/Imagen-5-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-5-section-5.png" alt=""
 													class="wp-image-257"
-													srcset="/wp-content/uploads/2025/10/Imagen-5-section-5.png 900w, /wp-content/uploads/2025/10/Imagen-5-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-5-section-5-768x476.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-5-section-5.png 900w, wp-content/uploads/2025/10/Imagen-5-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-5-section-5-768x476.png 768w"
 													sizes="auto, (max-width: 900px) 100vw, 900px"></figure>
 
 
@@ -4076,9 +4076,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-71f5c243">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="902" height="558"
-													src="/wp-content/uploads/2025/10/Imagen-6-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-6-section-5.png" alt=""
 													class="wp-image-258"
-													srcset="/wp-content/uploads/2025/10/Imagen-6-section-5.png 902w, /wp-content/uploads/2025/10/Imagen-6-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-6-section-5-768x475.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-6-section-5.png 902w, wp-content/uploads/2025/10/Imagen-6-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-6-section-5-768x475.png 768w"
 													sizes="auto, (max-width: 902px) 100vw, 902px"></figure>
 
 
@@ -4100,9 +4100,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-a217b5ec">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="898" height="556"
-													src="/wp-content/uploads/2025/10/Imagen-7-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-7-section-5.png" alt=""
 													class="wp-image-259"
-													srcset="/wp-content/uploads/2025/10/Imagen-7-section-5.png 898w, /wp-content/uploads/2025/10/Imagen-7-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-7-section-5-768x476.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-7-section-5.png 898w, wp-content/uploads/2025/10/Imagen-7-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-7-section-5-768x476.png 768w"
 													sizes="auto, (max-width: 898px) 100vw, 898px"></figure>
 
 
@@ -4123,9 +4123,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-b0f37260">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="898" height="556"
-													src="/wp-content/uploads/2025/10/Imagen-8-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-8-section-5.png" alt=""
 													class="wp-image-260"
-													srcset="/wp-content/uploads/2025/10/Imagen-8-section-5.png 898w, /wp-content/uploads/2025/10/Imagen-8-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-8-section-5-768x476.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-8-section-5.png 898w, wp-content/uploads/2025/10/Imagen-8-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-8-section-5-768x476.png 768w"
 													sizes="auto, (max-width: 898px) 100vw, 898px"></figure>
 
 
@@ -4146,9 +4146,9 @@ flexibility(document.documentElement);
 										<div class="wp-block-uagb-container uagb-block-86f9e3dd">
 											<figure class="wp-block-image size-full"><img loading="lazy"
 													decoding="async" width="900" height="558"
-													src="/wp-content/uploads/2025/10/Imagen-9-section-5.png" alt=""
+													src="wp-content/uploads/2025/10/Imagen-9-section-5.png" alt=""
 													class="wp-image-261"
-													srcset="/wp-content/uploads/2025/10/Imagen-9-section-5.png 900w, /wp-content/uploads/2025/10/Imagen-9-section-5-300x186.png 300w, /wp-content/uploads/2025/10/Imagen-9-section-5-768x476.png 768w"
+													srcset="wp-content/uploads/2025/10/Imagen-9-section-5.png 900w, wp-content/uploads/2025/10/Imagen-9-section-5-300x186.png 300w, wp-content/uploads/2025/10/Imagen-9-section-5-768x476.png 768w"
 													sizes="auto, (max-width: 900px) 100vw, 900px"></figure>
 
 
@@ -4330,9 +4330,9 @@ flexibility(document.documentElement);
 											<div
 												class="wp-block-uagb-image uagb-block-e5a0e805 wp-block-uagb-image--layout-default wp-block-uagb-image--effect-static wp-block-uagb-image--align-none">
 												<figure class="wp-block-uagb-image__figure"><img decoding="async"
-														srcset="/wp-content/uploads/2025/10/imagen-1-section-7.jpg ,/wp-content/uploads/2025/10/imagen-1-section-7.jpg 780w, /wp-content/uploads/2025/10/imagen-1-section-7.jpg 360w"
+														srcset="wp-content/uploads/2025/10/imagen-1-section-7.jpg ,wp-content/uploads/2025/10/imagen-1-section-7.jpg 780w, wp-content/uploads/2025/10/imagen-1-section-7.jpg 360w"
 														sizes="auto, (max-width: 480px) 150px"
-														src="/wp-content/uploads/2025/10/imagen-1-section-7.jpg" alt=""
+														src="wp-content/uploads/2025/10/imagen-1-section-7.jpg" alt=""
 														class="uag-image-204" width="585" height="585"
 														title="imagen-1-section-7" loading="lazy" role="img"></figure>
 											</div>
@@ -4342,9 +4342,9 @@ flexibility(document.documentElement);
 											<div class="wp-block-uagb-container uagb-block-64a12621">
 												<figure class="wp-block-image size-full image-section-8"><img
 														loading="lazy" decoding="async" width="299" height="302"
-														src="/wp-content/uploads/2025/10/workana_bola.png" alt=""
+														src="wp-content/uploads/2025/10/workana_bola.png" alt=""
 														class="wp-image-212"
-														srcset="/wp-content/uploads/2025/10/workana_bola.png 299w, /wp-content/uploads/2025/10/workana_bola-297x300.png 297w"
+														srcset="wp-content/uploads/2025/10/workana_bola.png 299w, wp-content/uploads/2025/10/workana_bola-297x300.png 297w"
 														sizes="auto, (max-width: 299px) 100vw, 299px"></figure>
 											</div>
 										</div>
@@ -4532,9 +4532,9 @@ flexibility(document.documentElement);
 												<div class="wp-block-uagb-container uagb-block-7e5da563">
 													<figure class="wp-block-image size-full is-resized image-section-6">
 														<img loading="lazy" decoding="async" width="218" height="216"
-															src="/wp-content/uploads/2025/10/Image-1-Ultimo.jpg" alt=""
+															src="wp-content/uploads/2025/10/Image-1-Ultimo.jpg" alt=""
 															class="wp-image-240" style="width:107px"
-															srcset="/wp-content/uploads/2025/10/Image-1-Ultimo.jpg 218w, /wp-content/uploads/2025/10/Image-1-Ultimo-150x150.jpg 150w"
+															srcset="wp-content/uploads/2025/10/Image-1-Ultimo.jpg 218w, wp-content/uploads/2025/10/Image-1-Ultimo-150x150.jpg 150w"
 															sizes="auto, (max-width: 218px) 100vw, 218px"></figure>
 
 
@@ -4574,7 +4574,7 @@ flexibility(document.documentElement);
 																class="wp-block-image size-full is-resized logo-footer">
 																<img loading="lazy" decoding="async" width="290"
 																	height="48"
-																	src="/wp-content/uploads/2025/10/footer-logo.png"
+																	src="wp-content/uploads/2025/10/footer-logo.png"
 																	alt="" class="wp-image-441" style="width:145px">
 															</figure>
 														</div>
@@ -4649,7 +4649,7 @@ flexibility(document.documentElement);
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 	<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/astra-hijo\/*","\/wp-content\/themes\/astra\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\wp-content\/uploads\/*","\wp-content\/*","\wp-content\/plugins\/*","\wp-content\/themes\/astra-hijo\/*","\wp-content\/themes\/astra\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 
 	<div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both">
@@ -4839,18 +4839,18 @@ flexibility(document.documentElement);
 	<script id="astra-theme-js-js-extra">
 		var astra = { "break_point": "921", "isRtl": "", "is_scroll_to_id": "1", "is_scroll_to_top": "1", "is_header_footer_builder_active": "1", "responsive_cart_click": "flyout", "is_dark_palette": "" };
 	</script>
-	<script src="/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.11.13"
+	<script src="wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.11.13"
 		id="astra-theme-js-js"></script>
 	<script
-		src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/spectra-block-positioning.min.js?ver=2.19.15"
+		src="wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/spectra-block-positioning.min.js?ver=2.19.15"
 		id="uagb-block-positioning-js-js"></script>
-	<script src="/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/uagb-button-child.min.js?ver=2.19.15"
+	<script src="wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/uagb-button-child.min.js?ver=2.19.15"
 		id="uagb-button-child-js-js"></script>
-	<script src="/wp-content/uploads/uag-plugin/assets/0/uag-js-5.js?ver=1761431100" id="uag-script-5-js"></script>
+	<script src="wp-content/uploads/uag-plugin/assets/0/uag-js-5.js?ver=1761431100" id="uag-script-5-js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js?ver=3.13.0" id="gsap-js-js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js?ver=3.13.0"
 		id="gsap-st-js"></script>
-	<script src="/wp-content/themes/astra-hijo/js/animaciones.js" id="mi-gsap-js-js"></script>
+	<script src="wp-content/themes/astra-hijo/js/animaciones.js" id="mi-gsap-js-js"></script>
 	<script>
 		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
 	</script>
